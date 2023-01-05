@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Condensed:ital,wght@0,300;0,700;1,300 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Condensed:ital,wght@0,300;0,700;1,300 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Fredoka+One & family= Roboto:wght@700 & display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: rgb(64,191,47);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(82,253,29,0.32816876750700286) 36%, rgba(12,119,18,1) 100%);
+
+}
+
+
+.titulo {
+    padding: 1rem;
+    color: rgb(244, 255, 244);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: underline double;
+    background-image: url("./../assets/images/portada.jpg");
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+
+.menu {
+    width: 100%;
+    height: 58px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(6, 112, 6);
+    list-style-type: none;
+    text-align: center;
+    font-family:  'Roboto', sans-serif;
+}
+
+.menu_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+
+.menu_link {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    padding: 3rem;
+}
+
+.menu_link.active {
+    color: white;
+    background-color: black;
+    padding: 0.8rem;
+    border-radius: 15px;
+}h2 , h6 {
+    padding: 0.5rem;
+    color: rgb(149, 209, 130);
+    background-color: rgb(11, 51, 11);
+    font-family: " Roboto Condensed", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+@media screen and (max-width:768px){
+    .titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .menu{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: block;
+        float: none;
+        border-bottom: rgb(25, 184, 11);
+        
+    }
+    .menu_item{
+        display: block;
+        margin-right: 0;
+        display: block;
+        margin-top: 10px;
+    }
+    .menu_link.active{
+        text-align: center;
+    }
+    .titulos {
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+ 
+} 
+    
+
+
+
+
+
+
+.main{
+    padding: 40px;
+}
+
+.locales {
+    margin: 1rem;
+    width: 400px;
+    background-color: rgb(149, 209, 130);
+    padding: 1rem;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.locales__imagen {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.locales__titulo {
+    font-family: " Roboto Condensed", sans-serif;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productos{
+    margin: 1rem;
+    width: 400px;
+    background-color: rgb(149, 209, 130);
+    padding: 1rem;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.productos__imagen{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.productos__titulo{
+    font-family: " Roboto Condensed", sans-serif;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.formulario {
+    margin: 20px;
+    font-family: " Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font: optional;
+    color: rgb(0, 82, 0);
+    background-color: rgb(166, 255, 166);
+}
+
+
+
+footer{
+    height: 40vh;
+    background-color: black;
+    color: white;
+}
+
+.mail{
+    margin: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpp{
+    margin: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.parrafos{
+    margin: 20px;
+    background-color:rgb(166, 255, 166); 
+    font-size: 30px;
+    font-family: " Roboto Condensed", sans-serif;
+
+}
+
+.productos{
+    transition: all 1s ;
+}
+.productos:hover{
+   transform: scale(1,1) translateY(-15px); 
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
