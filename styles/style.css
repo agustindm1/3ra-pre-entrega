@@ -83,13 +83,14 @@ body{
         display: block;
         float: none;
         border-bottom: rgb(25, 184, 11);
+        margin-bottom: 5px;
         
     }
     .menu_item{
         display: block;
         margin-right: 0;
         display: block;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .menu_link.active{
         text-align: center;
@@ -101,13 +102,6 @@ body{
 
  
 } 
-    
-
-
-
-
-
-
 .main{
     padding: 40px;
 }
@@ -135,7 +129,23 @@ body{
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width:768px){
+.locales{
+    margin: 0.5rem;
+    width: 150px;
+    padding: 0.25rem;
+    border-radius: 5px;
+}
+.locales__imagen{
+    height: 250px;
+    border-radius: 5px;
+}
+.locales__titulo{
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
 
+}
 .productos{
     margin: 1rem;
     width: 400px;
@@ -159,7 +169,22 @@ body{
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width:768px){
+    .productos{
+        margin: 0.25 rem;
+        width: 200px;
+    border-radius: 5px; }
+        .productos__imagen{
+            height: 100px;
+            border-radius: 5px;
+        }
+        .productos__titulo{
+            font-size: 15px;
+            margin-bottom: 0.5rem;
 
+        }
+
+}
 button{
     background-color: black;
     color: white;
@@ -168,6 +193,7 @@ button{
     border-radius: 15px;
     cursor: pointer;
 }
+
 
 .formulario {
     margin: 20px;
